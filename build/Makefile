@@ -120,24 +120,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pic-demo
+# Target rules for targets named demo
 
 # Build rule for target.
-pic-demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pic-demo
-.PHONY : pic-demo
+demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
 
 # fast build rule for target.
-pic-demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/build
-.PHONY : pic-demo/fast
+demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
 
 src/configuration.obj: src/configuration.c.obj
 .PHONY : src/configuration.obj
 
 # target to build an object file
 src/configuration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/configuration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/configuration.c.obj
 .PHONY : src/configuration.c.obj
 
 src/configuration.i: src/configuration.c.i
@@ -145,7 +145,7 @@ src/configuration.i: src/configuration.c.i
 
 # target to preprocess a source file
 src/configuration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/configuration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/configuration.c.i
 .PHONY : src/configuration.c.i
 
 src/configuration.s: src/configuration.c.s
@@ -153,7 +153,7 @@ src/configuration.s: src/configuration.c.s
 
 # target to generate assembly for a file
 src/configuration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/configuration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/configuration.c.s
 .PHONY : src/configuration.c.s
 
 src/interrupts.obj: src/interrupts.c.obj
@@ -161,7 +161,7 @@ src/interrupts.obj: src/interrupts.c.obj
 
 # target to build an object file
 src/interrupts.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/interrupts.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/interrupts.c.obj
 .PHONY : src/interrupts.c.obj
 
 src/interrupts.i: src/interrupts.c.i
@@ -169,7 +169,7 @@ src/interrupts.i: src/interrupts.c.i
 
 # target to preprocess a source file
 src/interrupts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/interrupts.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/interrupts.c.i
 .PHONY : src/interrupts.c.i
 
 src/interrupts.s: src/interrupts.c.s
@@ -177,7 +177,7 @@ src/interrupts.s: src/interrupts.c.s
 
 # target to generate assembly for a file
 src/interrupts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/interrupts.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/interrupts.c.s
 .PHONY : src/interrupts.c.s
 
 src/main.obj: src/main.c.obj
@@ -185,7 +185,7 @@ src/main.obj: src/main.c.obj
 
 # target to build an object file
 src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.obj
 .PHONY : src/main.c.obj
 
 src/main.i: src/main.c.i
@@ -193,7 +193,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -201,7 +201,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pic-demo.dir/build.make CMakeFiles/pic-demo.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 # Help Target
@@ -212,7 +212,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... pic-demo"
+	@echo "... demo"
 	@echo "... src/configuration.obj"
 	@echo "... src/configuration.i"
 	@echo "... src/configuration.s"

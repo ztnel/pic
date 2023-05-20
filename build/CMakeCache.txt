@@ -115,7 +115,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=PIC toolchain demo
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=pic-demo
+CMAKE_PROJECT_NAME:STATIC=demo
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -202,6 +202,15 @@ XC8_OBJCPY:FILEPATH=/Applications/microchip/xc8/v2.41/bin/avr-objcopy
 
 //Path to a program.
 XC8_OBJDUMP:FILEPATH=/Applications/microchip/xc8/v2.41/bin/avr-objdump
+
+//Value Computed by CMake
+demo_BINARY_DIR:STATIC=/Users/christiansargusingh/Projects/pic/build
+
+//Value Computed by CMake
+demo_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+demo_SOURCE_DIR:STATIC=/Users/christiansargusingh/Projects/pic
 
 //Value Computed by CMake
 pic-demo_BINARY_DIR:STATIC=/Users/christiansargusingh/Projects/pic/build

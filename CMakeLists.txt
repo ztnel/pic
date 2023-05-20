@@ -30,7 +30,7 @@ project(
 include(xc8)
 
 set(GCC_FLAGS "-Wno-unused-parameter -Wpedantic -fno-builtin -Wall -Wextra -ffunction-sections -fdata-sections -fomit-frame-pointer")
-message(STATUS "Appending GCC flags: ${GCC_FLAGS}")
+message(STATUS "Appending C flags: ${GCC_FLAGS}")
 set(CMAKE_C_FLAGS "${PIC16F1788_COMPILE_FLAGS} ${GCC_FLAGS}")
 set(CMAKE_ASM_FLAGS "${PIC16F178_COMPILE_FLAGS} ${GCC_FLAGS}")
 set(CMAKE_EXE_LINKER_FLAGS "${PIC16F178_LINKER_FLAGS}")
