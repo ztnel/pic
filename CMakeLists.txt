@@ -29,8 +29,6 @@ project(
 
 include(xc8)
 
-set(GCC_FLAGS "-Wno-unused-parameter -Wpedantic -fno-builtin -Wall -Wextra -ffunction-sections -fdata-sections -fomit-frame-pointer")
-message(STATUS "Appending C flags: ${GCC_FLAGS}")
 set(CMAKE_C_FLAGS "${PIC16F1788_COMPILE_FLAGS} ${GCC_FLAGS}")
 set(CMAKE_ASM_FLAGS "${PIC16F178_COMPILE_FLAGS} ${GCC_FLAGS}")
 set(CMAKE_EXE_LINKER_FLAGS "${PIC16F178_LINKER_FLAGS}")
@@ -45,9 +43,9 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # Options for DEBUG build
-set(CMAKE_C_FLAGS_DEBUG "-D__DEBUG -O0 -g" CACHE INTERNAL "C Compiler options for debug build type")
-set(CMAKE_ASM_FLAGS_DEBUG "-O0 -g" CACHE INTERNAL "ASM Compiler options for debug build type")
-set(CMAKE_EXE_LINKER_FLAGS_DEBUG "-O0 -g" CACHE INTERNAL "Linker options for debug build type")
+set(CMAKE_C_FLAGS_DEBUG "-D__DEBUG -O0 ${PIC16F1788_DEBUG_COMPILE_FLAGS}" CACHE INTERNAL "C Compiler options for debug build type")
+set(CMAKE_ASM_FLAGS_DEBUG "-O0" CACHE INTERNAL "ASM Compiler options for debug build type")
+set(CMAKE_EXE_LINKER_FLAGS_DEBUG "-O0" CACHE INTERNAL "Linker options for debug build type")
 
 # Options for RELEASE build
 set(CMAKE_C_FLAGS_RELEASE "-Os" CACHE INTERNAL "C Compiler options for release build type")
