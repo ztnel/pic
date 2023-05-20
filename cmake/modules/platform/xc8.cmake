@@ -1,13 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
 
-if(NOT TOOLCHAIN_ROOT)
-  message(FATAL_ERROR
-    "No Microchip XC8 compiler was found. Please provide the path"
-    " to an XC8 installation on the command line, for example:\n"
-    "    cmake -DTOOLCHAIN_ROOT=/opt/microchip/xc8/v2.00 .."
-  )
-endif()
-
 set(CMAKE_FIND_ROOT_PATH "${TOOLCHAIN_ROOT}")
 message(STATUS "Discovering XC8 executables.")
 find_program(CMAKE_C_COMPILER "xc8-cc"
