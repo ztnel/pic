@@ -1,0 +1,3 @@
+/Users/christiansargusingh/Projects/pic/build/CMakeFiles/pic-demo.dir
+/Users/christiansargusingh/Projects/pic/build/CMakeFiles/edit_cache.dir
+/Users/christiansargusingh/Projects/pic/build/CMakeFiles/rebuild_cache.dir

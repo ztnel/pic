@@ -1,0 +1,1 @@
+/Applications/microchip/xc8/v2.41/bin/xc8-cc -mcpu=16LF1788 -Wno-unused-parameter -Wpedantic -fno-builtin -Wall -Wextra -ffunction-sections -fdata-sections -fomit-frame-pointer -Os -Os CMakeFiles/pic-demo.dir/src/main.c.obj CMakeFiles/pic-demo.dir/src/interrupts.c.obj CMakeFiles/pic-demo.dir/src/configuration.c.obj -o pic-demo 
