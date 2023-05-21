@@ -65,6 +65,9 @@ set(
   ${TOOLCHAIN_ROOT}/pic/include/c99
 )
 
+# just for intellisense since we cannot define predefined macros alongside a set of compile commands
+add_compile_definitions(__XC8, __PICC__, _16F1788)
+
 target_include_directories(${EXECUTABLE} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories(${EXECUTABLE} PRIVATE ${XC8_PIC_INCLUDE})
 target_include_directories(${EXECUTABLE} PRIVATE include)
