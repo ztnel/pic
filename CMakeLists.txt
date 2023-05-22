@@ -54,8 +54,8 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/config.h.in config.h @ONLY)
 add_executable(
   ${EXECUTABLE}
   src/main.c
-  # src/interrupts.c
-  # src/configuration.c
+  src/pwm.c
+  src/configuration.c
 )
 
 set(
