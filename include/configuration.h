@@ -13,6 +13,8 @@
 #ifndef __CONFIGURATION_H__
 #define __CONFIGURATION_H__
 
+#define FCLK 32000000
+
 // FOSC selects the clock source for MCU.
 #pragma config FOSC = ECH
 
@@ -82,11 +84,11 @@ A stack overflow or underflow always sets the STKOVF or STKUNF bit in the PCON r
  * 1 0	BOOT	Address range 0 - 0x1FF write protected 200 h - FFFn write-able
  * 0 1	HALF	Address range 0 - 0x7FF write protected 800 h - FFFn write-able
  */
-#ifdef __DEBUG
-#pragma config WRT = ON
-#else
-#pragma config WRT = BOOT
-#endif
+// #ifdef __DEBUG
+// #pragma config WRT = ON
+// #else
+// #pragma config WRT = BOOT
+// #endif
 
 // FCMEN controls the operation of the Fail-Safe Clock Monitor allowing the clock to switch from external to internal in the event of an external clock failure.
 #ifdef __DEBUG
