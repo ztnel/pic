@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 
 set(CMAKE_FIND_ROOT_PATH "${TOOLCHAIN_ROOT}")
-message(STATUS "Discovering XC8 executables.")
+message(STATUS "Discovering XC8 executables under ${TOOLCHAIN_ROOT}")
 find_program(CMAKE_C_COMPILER "xc8-cc"
   PATHS "${TOOLCHAIN_ROOT}"
   PATH_SUFFIXES "bin"
