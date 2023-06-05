@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
 # Load toolchain files
-set(TOOLCHAIN_ROOT "/Applications/microchip/xc8/v2.41")
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/cmake/toolchains/pic16f1788.cmake)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -71,12 +70,3 @@ add_compile_definitions(__XC8, __PICC__, _16F1788)
 target_include_directories(${EXECUTABLE} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories(${EXECUTABLE} PRIVATE ${XC8_PIC_INCLUDE})
 target_include_directories(${EXECUTABLE} PRIVATE include)
-
-# file(GLOB_RECURSE GENERATED_FILES "*.d" "*.p1")
-
-# add_custom_target(clean_xc8_files
-#   COMMAND ${CMAKE_COMMAND} -E remove ${GENERATED_FILES}
-#   COMMENT "Cleaning xc8 generated files"
-# )
-
-# set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES clean_generated_files)
