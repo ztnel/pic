@@ -5,7 +5,6 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/cmake/toolchains/pic16f1788
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# For debug, no change detected ...
 set(CMAKE_VERBOSE_MAKEFILE ON)
 # global project name
 set(EXECUTABLE "demo")
@@ -65,7 +64,7 @@ set(
 )
 
 # just for intellisense since we cannot define predefined macros alongside a set of compile commands
-add_compile_definitions(__XC8, __PICC__, _16F1788)
+add_compile_definitions(__XC8 __PICC__ _16F1788)
 
 target_include_directories(${EXECUTABLE} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories(${EXECUTABLE} PRIVATE ${XC8_PIC_INCLUDE})

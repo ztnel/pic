@@ -1,7 +1,3 @@
-##
-## STM32H723 Toolchain
-## 
-
 set(CMAKE_SYSTEM_NAME xc8)
 set(CMAKE_SYSTEM_VERSION 1)
 
